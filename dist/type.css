@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.noise::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  content: "";
+  /* you can control opacity of noise  */
+  opacity: 0.01;
+  z-index: 1000;
+  pointer-events: none;
+  background: url(../dist/images/noise.gif);
+}
